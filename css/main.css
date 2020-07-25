@@ -235,3 +235,24 @@ div#001.section{
   border-radius: 5px;
   border-color: white;
 }
+
+------------- End of blockqute ------------------
+
+/* -------------start of animations ---------------
+.SlideInDown {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+*/
+
+
+::selection {
+	background: #17a2b8;
+	color: #fff;
+	text-shadow: none;
+}
+
+.a.btn-link{
+  text-decoration: none;
+}
