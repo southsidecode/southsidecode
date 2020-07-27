@@ -256,3 +256,14 @@ div#001.section{
 .a.btn-link{
   text-decoration: none;
 }
+
+.get-it {
+    background: #4fbfa8;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.btn-template-outlined-white:hover, .btn-template-outlined-white:focus {
+    background: #fff;
+    color: #4fbfa8 !important;
+}
