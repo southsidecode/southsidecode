@@ -186,14 +186,19 @@ section.cta {
 
 ------------------- Card images ----------------
 
-//* will come back to learn more about the below code
 
-.card-img-top{
+/* I alternatly added the following code on the Bootstrap file
+
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
   object-fit: cover;
   aspect-ratio: 1/.7;
-
 }
-*//
+
+*/
+
 
 -------------breadcumps-----------------
 .breadcrumb {
