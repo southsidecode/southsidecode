@@ -17,6 +17,6 @@ Our current services include
 
 We've just built our own website on top of Linux systems and hand coded using Atom & Bootstrap, Below is our direct link to our Github repository for you to see our code and view our site. Feel free to use our code in you own projects we don't mind 😉
 
-https://southsidecode.com     
+ https://southsidecode.github.io/southsidecode/     
 
 Let's create something unique together stay in with us. Together we can build great things with stunning results.
