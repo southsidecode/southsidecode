@@ -15,6 +15,20 @@ a:hover, a:active, a:focus {
 
  */
 
+section.mail-setup. img{
+  height: 50%;
+  width: 50%;
+}
+
+html body section div.container.mt-5 div.col-md-10 img{
+  height: 623px;
+  width: 1000px;
+}
+
+.col-md-9 > img:nth-child(4){
+  height: 623px;
+  width: 1000px;
+}
 
 .navbar .nav-item .nav-link {
   margin-right: 15px;
