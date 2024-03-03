@@ -237,11 +237,11 @@ section.cta {
     padding: .75rem 1rem;
     margin-bottom: 1rem;
     list-style: none;
-    background-color: #e9ecef
-    border-radius: .25rem;
+    background-color: #e9ecef ;
+    border-radius: .25rem ;
 }
 div#001.section{
-  padding-top: 100px
+  padding-top: 100px ;
   padding-bottom: 100px;
 }
 
@@ -276,6 +276,16 @@ div#001.section{
 
 ------------- End of blockqute ------------------
 
+
+/* ---------------- Faq on hosting page ---------------*/
+
+div.card.shadow-lg.bg-primary.text{
+  border-radius: 100px;
+  text-decoration: white;
+}
+
+
+<---------------- end of FAQ on hosting page -------------->
 
 ::selection {
 	background: #17a2b8;
