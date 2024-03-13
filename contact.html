@@ -32,42 +32,44 @@
     <!-- Start your project here-->
 
 
-
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary text-white">
-    <div class="container-fluid">
-      <a class="navbar-brand text-white" href="index.html">southsidecode</a>
-      <button
-        data-mdb-collapse-init
-        class="navbar-toggler"
-        type="button"
-        data-mdb-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
-        <ul class="navbar-nav  mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="contact.html">Call Us</a>
-          </li>
-        </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top static-top">
+      <div class="container">
+        <a class="navbar-brand" href="southsidecode.com">
+          <img src="img/favicon.png" width="60" height="60" alt="southsidecode logo img">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> <i class="bi bi-house-fill" style="color: #fff; font-size: 20px; margin-right:2px;"></i> Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="services.html"> <i class="bi bi-robot" style="color: #fff; font-size: 20px; margin-right:2px;"></i> Services</a>
+              <span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"> <i class="bi bi-info-circle-fill" style="color: #fff; font-size: 20px; margin-right:2px;"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html"> <i class="bi bi-credit-card-fill" style="color: #fff; font-size: 20px; margin-right:2px;"></i> pricing
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="web-hosting.html"> <i class="bi bi-diagram-3-fill" style="color: #fff; font-size: 20px; margin-right:2px;"></i> Web hosting
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"> <i class="bi bi-envelope-fill" style="color: #fff; font-size: 20px; margin-right:2px;"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-
-
+    </nav>
+    <!-- End of navbar-->
 
       <header class="masthead-contact">
         <div class="container d-flex h-70 align-items-center">
@@ -124,15 +126,16 @@
             action="https://formspree.io/f/xyyrpwbl"
             method="POST"
           >
-            <label>
-              Your email:
-              <input type="email" name="email">
-            </label>
-            <label>
-              Your message:
-              <textarea name="message"></textarea>
-            </label>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input name="email" type="email"  placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label >Example textarea</label>
+            <textarea  name="message" rows="3"></textarea>
+          </div>
             <!-- your other form fields go here -->
+            <input type="text" name="" id="">
             <button type="submit">Send</button>
           </form></div>
           <div class="col-sm-12 col-md-6"></div>
@@ -166,6 +169,77 @@
         </section>
 
     <!-- End of warning website -->
+
+    <!-- my footer-->
+    <div class="container-fluid bg-light mb-n4">
+      <div class="container pt-4 my-md-5 pt-md-5">
+  
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="img/bootstrap-logo.svg" alt="" width="24" height="19">
+            <small class="d-block mb-3 text-muted">Built with <a href="#">bootstrap</a> &amp; made with 💙 by Lesego Molifi
+              <div class="pb-2"></div>
+              We are a small team of freelancer's located in Johannesburg, Florida building proper websites for our client's in South Africa.😉
+            </small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Other Services</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none disabled" href="#">South011</a>
+              <span class="badge bg-primary rounded-pill">disabled links</span></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none disabled" href="#">E-mail Automation</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none disabled" href="#">Domains</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none disabled" href="#">Google Services</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Dev Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="mail-conf.html">Mail setup</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="bootstrapmade.com">Bootstrap</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="wordpress.org">Wordpress</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="digitalocean.com">LAMP STACK</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="faq.html">FAQ</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="privacy.html">Privacy</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="terms.html">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-info">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">© 2022 southsidecode</span>
+          </div>
+  
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#twitter"></use>
+                </svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram"></use>
+                </svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#facebook"></use>
+                </svg></a></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <!-- End of Footer-->
+
 
 
 
