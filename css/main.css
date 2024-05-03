@@ -60,10 +60,29 @@
   color: #fff;
 }
 
-/*.navbar .nav-link {
-  color: #fff !important;
-}*/
 
+/*nav link settings*/
+
+/* this needs some fixing over time mr man
+
+a.nav-link:hover{
+  color: #fff;
+  background: rgb(255, 0, 255);
+  border-color: blue;
+}
+
+*/
+
+a.nav-link{
+  margin: 5px;
+  text-decoration: none;
+}
+
+a.nav-link.active{ 
+  color: #fff !important ;
+  background: blue;
+  border-radius: 5%;
+}
 
 
 section.buttom-sec{
@@ -89,3 +108,15 @@ footer {
   /* Add any other necessary styles */
 }
 
+.b-sec{
+  margin-bottom: -50px;
+}
+
+/* card settings */
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+  object-fit: cover;
+  aspect-ratio: 1/.7;
+}
