@@ -114,8 +114,6 @@ section.buttom-sec{
 
 .b-sec {
   background-image: url('../img/backgroudlast.webp'); /* Change this to the path of your image */
-  width: 100%;
-  height: 50%;
   min-height: 35rem;
   padding: 15rem 0;
   background-size: cover; /* Cover the entire section */
@@ -171,22 +169,28 @@ footer {
   }
 }
 
-/* Custom gradient shadow effect using MDB classes */
-.shadow-gradient {
+/* Custom gradient border effect with rounded corners */
+.border-gradient {
   position: relative; /* For positioning the pseudo-element */
-  z-index: 1; /* Ensure the content is above the shadow */
+  z-index: 1; /* Ensure the content is above the border */
+  border-radius: 1rem; /* Adjust to make it rounder */
 }
 
-.shadow-gradient::after {
+.border-gradient::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: -5px; /* Adjust based on border thickness */
+  left: -5px; /* Adjust based on border thickness */
+  right: -5px; /* Adjust based on border thickness */
+  bottom: -5px; /* Adjust based on border thickness */
   z-index: -1; /* Position behind the element */
-  background: linear-gradient(19deg, rgba(62, 236, 172, 0.5), rgba(238, 116, 225, 0.5));
-  filter: blur(20px); /* Adjust blur for softness */
-  transform: translate(5px, 5px); /* Optional: Adjust position for a more shadow-like effect */
+  background: linear-gradient(90deg, rgba(62, 236, 172, 1), rgba(238, 116, 225, 1)); /* Full opacity for border */
+  border-radius: 1rem; /* Match the border radius for the gradient */
 }
+
+/* Adjust original element's border */
+.border-gradient {
+  border: 5px solid transparent; /* Create space for the gradient border */
+}
+
 
