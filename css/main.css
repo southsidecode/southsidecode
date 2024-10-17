@@ -138,4 +138,21 @@ footer {
   aspect-ratio: 1/.7;
 }
 
+#lesego img {
+  position: relative;
+  animation: moveUpDown 4s infinite;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Adjust the value for how much it moves up */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 
