@@ -130,6 +130,8 @@ section.buttom-sec{
   background-size: cover; /* Cover the entire section */
   background-position: center; /* Center the background image */
   padding: 100px 0; /* Optional: Adjust padding for spacing */
+  height: 50%;
+  min-width: 40%;
 }
 
 
@@ -169,4 +171,22 @@ footer {
   }
 }
 
+/* Custom gradient shadow effect using MDB classes */
+.shadow-gradient {
+  position: relative; /* For positioning the pseudo-element */
+  z-index: 1; /* Ensure the content is above the shadow */
+}
+
+.shadow-gradient::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Position behind the element */
+  background: linear-gradient(90deg, rgba(62, 236, 172, 0.5), rgba(238, 116, 225, 0.5));
+  filter: blur(20px); /* Adjust blur for softness */
+  transform: translate(5px, 5px); /* Optional: Adjust position for a more shadow-like effect */
+}
 
