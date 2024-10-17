@@ -186,6 +186,27 @@
         </div>
         <!-- End of contact form section-->
 
+        <!-- Custom icon that triggers the modal -->
+    <img src="img/contact-us.png" alt="Open Modal" class="custom-icon" id="openModal" />
+
+    <!-- Modal Structure -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This is the content of the modal.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
         <!-- waring section -->
 
         <section class="warning-sec">
@@ -339,5 +360,14 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+    <script>
+        // JavaScript to trigger modal on icon click
+        document.getElementById('openModal').addEventListener('click', function () {
+            const modal = new mdb.Modal(document.getElementById('exampleModal'));
+            modal.show();
+        });
+    </script>
     </body>
 </html>

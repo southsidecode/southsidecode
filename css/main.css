@@ -184,13 +184,19 @@ footer {
   right: -5px; /* Adjust based on border thickness */
   bottom: -5px; /* Adjust based on border thickness */
   z-index: -1; /* Position behind the element */
-  background: linear-gradient(90deg, rgba(62, 236, 172, 1), rgba(238, 116, 225, 1)); /* Full opacity for border */
+  background: linear-gradient(19deg, rgba(62, 236, 172, 1), rgba(238, 116, 225, 1)); /* Full opacity for border */
   border-radius: 1rem; /* Match the border radius for the gradient */
 }
 
 /* Adjust original element's border */
 .border-gradient {
-  border: 5px solid transparent; /* Create space for the gradient border */
+  border: 1
+  5px solid transparent; /* Create space for the gradient border */
 }
 
-
+/* modal setting */
+.custom-icon {
+  cursor: pointer; /* Change cursor to pointer for icon */
+  width: 50px; /* Adjust the size as needed */
+  height: auto;
+}
