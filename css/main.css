@@ -185,7 +185,7 @@ footer {
   right: 0;
   bottom: 0;
   z-index: -1; /* Position behind the element */
-  background: linear-gradient(90deg, rgba(62, 236, 172, 0.5), rgba(238, 116, 225, 0.5));
+  background: linear-gradient(19deg, rgba(62, 236, 172, 0.5), rgba(238, 116, 225, 0.5));
   filter: blur(20px); /* Adjust blur for softness */
   transform: translate(5px, 5px); /* Optional: Adjust position for a more shadow-like effect */
 }
