@@ -120,6 +120,14 @@ section.b-sec{
   background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/backgroudlast.webp");
 }
 
+.b-sec {
+  background-image: url('../img/backgroudlast.webp'); /* Change this to the path of your image */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  padding: 100px 0; /* Optional: Add padding for spacing */
+}
+
 footer {
   width: 100% !important;
   /* Add any other necessary styles */
