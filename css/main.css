@@ -325,10 +325,10 @@ footer {
     font-size: 16px;
 }
 
-.service-6 .bg-warning-gradiant {
-  background: #ffcc00;
-  background: -webkit-linear-gradient(left, #ffcc00 0%, #ff9900 100%);
-  background: linear-gradient(to right, #ffcc00 0%, #ff9900 100%);
+.service-6 .bg-purple-gradiant {
+  background: #6a1b9a;
+    background: -webkit-linear-gradient(left, #6a1b9a 0%, #8e24aa 100%);
+    background: linear-gradient(to right, #6a1b9a 0%, #8e24aa 100%);
 }
 
 .service-6 .bg-secondary-gradiant {
