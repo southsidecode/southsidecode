@@ -324,3 +324,22 @@ footer {
     padding: 15px 45px;
     font-size: 16px;
 }
+
+.service-6 .bg-warning-gradiant {
+  background: #ffcc00;
+  background: -webkit-linear-gradient(left, #ffcc00 0%, #ff9900 100%);
+  background: linear-gradient(to right, #ffcc00 0%, #ff9900 100%);
+}
+
+.service-6 .bg-secondary-gradiant {
+  background: #6c757d;
+  background: -webkit-linear-gradient(left, #6c757d 0%, #495057 100%);
+  background: linear-gradient(to right, #6c757d 0%, #495057 100%);
+}
+
+.service-6 .bg-dark-gradiant {
+  background: #343a40;
+  background: -webkit-linear-gradient(left, #343a40 0%, #212529 100%);
+  background: linear-gradient(to right, #343a40 0%, #212529 100%);
+}
+
