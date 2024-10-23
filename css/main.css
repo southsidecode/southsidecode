@@ -115,6 +115,7 @@ section.buttom-sec{
 .b-sec {
   background-image: url('../img/backgroudlast.webp'); /* Change this to the path of your image */
   min-height: 35rem;
+  min-width: 75px;
   padding: 15rem 0;
   background-size: cover; /* Cover the entire section */
   background-position: center; /* Center the image */
