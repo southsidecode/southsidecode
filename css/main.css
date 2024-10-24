@@ -344,3 +344,57 @@ footer {
   background: linear-gradient(to right, #343a40 0%, #212529 100%);
 }
 
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap");
+.speedyui-partner {
+  font-family: 'Inter', sans-serif;
+  --ss-primary-color:#ed3364;
+  background-color: #fff;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.speedyui-partner h1, .speedyui-partner h2, .speedyui-partner h3, .speedyui-partner h4, .speedyui-partner h5, .speedyui-partner h6, .speedyui-partner p {
+  margin: 0;
+}
+
+.speedyui-partner .badge {
+  background-color: transparent;
+  font-size: 14px;
+  position: relative;
+  z-index: 0;
+  color: var(--ss-primary-color);
+}
+
+.speedyui-partner .badge:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: var(--ss-primary-color);
+  opacity: .1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.speedyui-partner .partner-wrapper {
+  background-color: transparent;
+  transition: all .3s;
+  height: 200px;
+  border: 1px solid;
+  border-color: #f7f7f7;
+}
+
+.speedyui-partner .partner-wrapper img {
+  filter: grayscale(100%);
+  transition: all .3s;
+}
+
+.speedyui-partner .partner-wrapper:hover {
+  background-color: #f8f9fa;
+}
+
+.speedyui-partner .partner-wrapper:hover img {
+  filter: grayscale(0%);
+}
