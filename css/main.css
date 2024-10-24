@@ -543,3 +543,32 @@ footer {
       transform: translateY(-7px); /* Small move up */
   }
 }
+
+
+/* my slider for icons */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.speedyui-partner {
+  --su-black-color: #000000;
+  --su-rubik-font: "Rubik", sans-serif;
+  font-family: var(--su-rubik-font);
+}
+.speedyui-partner h3 {
+  font-weight: 500;
+}
+.speedyui-partner .swiper-slide {
+  height: 95px;
+}
+.speedyui-partner .swiper-button-next, .speedyui-partner .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+}
+.speedyui-partner .swiper-button-next::after, .speedyui-partner .swiper-button-prev::after {
+  font-size: 12px;
+  color: var(--su-black-color);
+}
+.speedyui-partner .swiper-button-next {
+  right: 0;
+}
+.speedyui-partner .swiper-button-prev {
+  left: 0;
+}/*# sourceMappingURL=main.css.map */
