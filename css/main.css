@@ -516,14 +516,18 @@ footer {
 /* Sequential animation delays */
 .contact-icons .card:nth-child(1) img {
   animation-delay: 0.5s; /* First icon starts after 0.5 seconds */
+  padding-top: 4px;
 }
 
 .contact-icons .card:nth-child(2) img {
-  animation-delay: 1.5s; /* Second icon starts 1 second after the first */
+  animation-delay: 3.1s; /* Second icon starts 1 second after the first */
+  padding-top: 4px;
+
 }
 
 .contact-icons .card:nth-child(3) img {
-  animation-delay: 2.5s; /* Third icon starts 1 second after the second */
+  animation-delay: 4.1s; /* Third icon starts 1 second after the second */
+  padding-top: 4px;
 }
 
 /* Bounce animation keyframes */
