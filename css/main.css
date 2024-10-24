@@ -405,28 +405,35 @@ footer {
   padding: 12px 24px;
   font-size: 16px;
   font-weight: bold;
-  color: #ffffff;
+  color: #ffffff; /* Text color set to white */
   text-align: left;
   text-decoration: none;
   background: linear-gradient(45deg, #00f, #a020f0); /* Blue to purple gradient */
   border: none;
-  border-radius: 8px; /* Rounded corners for a modern look */
-  transition: background 0.4s ease, transform 0.2s ease; /* Smooth transition effects */
+  border-radius: 8px;
+  transition: background 0.4s ease, transform 0.2s ease;
   width: fit-content;
 }
 
 .custom-gradient-btn:hover {
   background: linear-gradient(45deg, #1e90ff, #8a2be2); /* Lighter gradient on hover */
-  transform: scale(1.05); /* Slightly enlarges the button for interaction feedback */
+  transform: scale(1.05);
+  color: #ffffff; /* Ensures the text stays white during hover */
 }
 
 .custom-gradient-btn:focus {
   outline: none;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.8); /* Blue shadow to highlight focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.8);
+  color: #ffffff; /* Ensures text is white when focused */
 }
 
 .custom-gradient-btn span {
   padding-left: 10px;
+}
+
+.custom-gradient-btn {
+  display: block; /* Ensures it aligns to the left */
+  margin-left: 0; /* Align the button to the left */
 }
 
 /* Additional UX details for mobile responsiveness */
