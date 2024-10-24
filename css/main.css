@@ -447,9 +447,54 @@ footer {
 
 /* General styling for the contact icons section */
 .contact-icons .card {
+    border: none;
+    border-radius: 10px; /* Smooth corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Base shadow */
+}
+
+.contact-icons .card:hover {
+    transform: translateY(-10px); /* Elevates the card on hover */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), /* Darker base shadow */
+                0 15px 35px rgba(0, 204, 255, 0.5), /* Light blue shadow */
+                0 15px 35px rgba(102, 255, 102, 0.5); /* Light green shadow */
+}
+
+/* Styling for the card images with bounce animation */
+.contact-icons .card img {
+    animation: bounce 2s infinite; /* Bounce animation */
+    transition: transform 0.3s ease;
+}
+
+.contact-icons .card img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Keyframes for bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Resting position */
+    }
+    40% {
+        transform: translateY(-15px); /* Move up */
+    }
+    60% {
+        transform: translateY(-7px); /* Small move up */
+    }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .contact-icons .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Custom card styling */
+.contact-icons .card {
   border: none;
-  border-radius: 10px; /* Smooth corners */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Base shadow */
 }
 
@@ -462,30 +507,35 @@ footer {
 
 /* Styling for the card images with bounce animation */
 .contact-icons .card img {
-  animation: bounce 2s infinite; /* Bounce animation */
-  transition: transform 0.3s ease;
+  animation: bounce 2s ease-out 1; /* Bounce only once with smooth easing */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Positioning for animation start */
+  animation-fill-mode: forwards; /* Retain the final state of the animation */
 }
 
-.contact-icons .card img:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
+/* Sequential animation delays */
+.contact-icons .card:nth-child(1) img {
+  animation-delay: 0.5s; /* First icon starts after 0.5 seconds */
 }
 
-/* Keyframes for bounce animation */
+.contact-icons .card:nth-child(2) img {
+  animation-delay: 1.5s; /* Second icon starts 1 second after the first */
+}
+
+.contact-icons .card:nth-child(3) img {
+  animation-delay: 2.5s; /* Third icon starts 1 second after the second */
+}
+
+/* Bounce animation keyframes */
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
       transform: translateY(0); /* Resting position */
+      opacity: 1; /* Fade in effect */
   }
   40% {
       transform: translateY(-15px); /* Move up */
   }
   60% {
       transform: translateY(-7px); /* Small move up */
-  }
-}
-
-/* Responsive styling */
-@media (max-width: 768px) {
-  .contact-icons .card {
-      margin-bottom: 20px;
   }
 }
