@@ -112,16 +112,6 @@ section.buttom-sec{
 }
 
 
-.b-sec {
-  background-image: url('../img/backgroudlast.webp'); /* Change this to the path of your image */
-  min-height: 35rem;
-  min-width: 75px;
-  padding: 15rem 0;
-  background-size: cover; /* Cover the entire section */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  padding: 100px 0; /* Optional: Add padding for spacing */
-}
 
 .newslatter-section {
   background-color: #3EECAC;
