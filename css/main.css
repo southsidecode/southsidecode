@@ -576,3 +576,61 @@ footer {
 .speedyui-partner .swiper-button-prev {
   left: 0;
 }/*# sourceMappingURL=main.css.map */
+
+/* my navbar code */
+
+body {
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set a default font */
+  height: 2000px; /* For demonstration (longer page) */
+  background: linear-gradient(to bottom, #e3f2fd, #ffffff); /* Background gradient */
+}
+
+.toolbar, .navbar {
+  position: fixed; /* Fixed at the top */
+  left: 0;
+  right: 0;
+  background-color: transparent; /* Fully transparent initially */
+  padding: 10px 20px; /* Padding around */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.navbar {
+  margin-top: 0; /* No margin between the toolbar and navbar */
+}
+
+.email-phone {
+  display: flex; /* Flex for email and phone number */
+  gap: 15px; /* Space between email and phone */
+  color: white; /* Default text color */
+}
+
+.social-icons {
+  display: flex; /* Flexbox for icons */
+  gap: 15px; /* Space between icons */
+}
+
+.social-icons a {
+  color: white; /* Icon color */
+  font-size: 20px; /* Icon size */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Semi-transparent styles for both toolbar and navbar */
+.semi-transparent {
+  background-color: rgba(248, 249, 250, 0.9); /* Semi-transparent background */
+  color: white; /* White text on semi-transparent background */
+}
+
+/* Change text color for links when semi-transparent */
+.semi-transparent .nav-link {
+  color: white; /* White color for navbar links */
+}

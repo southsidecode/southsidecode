@@ -19,45 +19,52 @@
         <link
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet">
+            <link href="
+            https://cdn.jsdelivr.net/npm/icomoon@1.0.0/style.min.css
+            " rel="stylesheet">   
 
         <!-- my google fonts -->
 
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/favicon.png" width="60" height="60" alt="southsidecode logo img">
-                  </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="contact.html">Contact us
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    </head>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/favicon.png" width="60" height="60" alt="southsidecode logo img">
+              </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"   href="contact.html">Contact us
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+
 
         <header class="masthead-contact">
             <div class="container d-flex h-70 align-items-center">
@@ -377,6 +384,13 @@
         <!-- MDBootstrap JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
 
+        <script src="js/popper.min.js"></script>
+        
+        <script src="js/jquery.sticky.js"></script>
+
+        <!-- my custom js-->
+         <script src="js/myjs.js"></script>
+
     <script>
         // JavaScript to trigger modal on icon click
         document.getElementById('openModal').addEventListener('click', function () {
@@ -384,5 +398,6 @@
             modal.show();
         });
     </script>
+    
     </body>
 </html>
