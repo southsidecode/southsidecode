@@ -578,19 +578,47 @@ footer {
 }/*# sourceMappingURL=main.css.map */
 
 
+
+
+#muteButton {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 24px; /* Adjust the font size */
+  color: rgba(87, 189, 95, 0.849);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  width: 60px; /* Fixed width for the button */
+  height: 60px; /* Fixed height for the button */
+  display: flex; /* Flexbox to center icon */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  border-radius: 70%; /* Circular button */
+  transition: transform 0.2s ease;
+}
+
+#muteButton:hover {
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+
+
 /* Floating Mute Button Styles */
 .mute-btn {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  padding: 10px;
+  padding: 20px;
   background-color: rgba(185, 57, 85, 0.8);
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(20, 158, 135, 0.438);
   animation: pulse 1.5s infinite;
   z-index: 1000;
-  font-size: 20px; /* Smaller size */
+  transform: scale(0.8); /* Adjust to make icon smaller */
+  
 }
 
 /* Animation for the Mute Button */
@@ -601,19 +629,5 @@ footer {
   50% {
       transform: scale(1.1);
   }
-}
-
-
-#muteButton {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  font-size: 20px; /* Smaller size */
-  color: rgba(22, 76, 192, 0.815); /* Light blue color */
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  z-index: 10;
-  transition: transform 0.2s ease;
 }
 
