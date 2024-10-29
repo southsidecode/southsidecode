@@ -584,13 +584,13 @@ footer {
   bottom: 20px;
   left: 20px;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(185, 57, 85, 0.8);
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(20, 158, 135, 0.438);
   animation: pulse 1.5s infinite;
   z-index: 1000;
-  font-size: 24px; /* Smaller size */
+  font-size: 20px; /* Smaller size */
 }
 
 /* Animation for the Mute Button */
@@ -601,5 +601,19 @@ footer {
   50% {
       transform: scale(1.1);
   }
+}
+
+
+#muteButton {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 20px; /* Smaller size */
+  color: rgba(22, 76, 192, 0.815); /* Light blue color */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.2s ease;
 }
 
