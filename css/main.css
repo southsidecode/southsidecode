@@ -60,6 +60,20 @@
   color: #fff;
 }
 
+.fi {
+  margin: 10px 10px 4px 10px; /* Top, right, bottom, and left margin */
+  font-size: 30px; /* Customize size for this specific icon */
+  padding: 20px; /* Space inside the border */
+  line-height: 1; /* Ensures icon height matches font-size */
+  border: 2px solid white; /* White border */
+  border-radius: 50%; /* Make it round */
+  display: inline-flex; /* Center-aligns the icon in the circle */
+  align-items: center; 
+  justify-content: center;
+}
+
+
+
 /* typography settings*/
 
  h2{
