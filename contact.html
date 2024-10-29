@@ -19,6 +19,7 @@
         <link
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet">
+            <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
             <link href="
             https://cdn.jsdelivr.net/npm/icomoon@1.0.0/style.min.css
             " rel="stylesheet">   
@@ -29,10 +30,10 @@
 
     </head>
 
-    <audio id="background-audio" loop autoplay>
-        <source src="img/two-lanes.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
+    <!-- Floating Mute Button -->
+    <button id="muteButton" class="mute-btn"><i class="fi fi-tr-volume-mute"></i></button>
+
+      
     
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -406,21 +407,32 @@
     </script>
 
 <script>
-    const audio = document.getElementById('background-music');
-    const muteButton = document.getElementById('mute-button');
-    
-    window.onload = function() {
-        audio.play().catch(error => {
-            console.log("Playback failed:", error);
-            audio.muted = true; // Mute initially if autoplay fails
-        });
-    };
+    // 1. Create the Audio Object
+    const audio = new Audio("img/two-lanes.mp3"); // Replace with your audio file URL
+    audio.loop = true;
+    audio.autoplay = true;
+    audio.volume = 0.5;
 
-    muteButton.onclick = function() {
-        audio.muted = !audio.muted;
-        muteButton.textContent = audio.muted ? "Unmute" : "Mute";
-    };
+    // 2. Get the Mute Button and Set Mute Status
+    const muteButton = document.getElementById('muteButton');
+    let isMuted = false;
+
+    // 3. Toggle Mute Status When Button is Clicked
+    muteButton.addEventListener('click', () => {
+        isMuted = !isMuted;
+        audio.muted = isMuted;
+        muteButton.style.backgroundColor = isMuted ? "rgba(255, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.8)";
+    });
+
+    // 4. Start Playing the Audio on Page Load
+    document.addEventListener('DOMContentLoaded', () => {
+        audio.play().catch(error => {
+            console.error("Autoplay blocked. Interaction required to start audio:", error);
+        });
+    });
 </script>
+
+
 
 
     
