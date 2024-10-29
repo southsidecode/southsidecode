@@ -29,6 +29,12 @@
 
     </head>
 
+    <audio id="background-audio" loop autoplay>
+        <source src="img/two-lanes.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -398,6 +404,25 @@
             modal.show();
         });
     </script>
+
+<script>
+    const audio = document.getElementById('background-music');
+    const muteButton = document.getElementById('mute-button');
+    
+    window.onload = function() {
+        audio.play().catch(error => {
+            console.log("Playback failed:", error);
+            audio.muted = true; // Mute initially if autoplay fails
+        });
+    };
+
+    muteButton.onclick = function() {
+        audio.muted = !audio.muted;
+        muteButton.textContent = audio.muted ? "Unmute" : "Mute";
+    };
+</script>
+
+
     
     </body>
 </html>
