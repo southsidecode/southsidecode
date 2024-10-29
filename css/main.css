@@ -591,7 +591,6 @@ footer {
   animation: pulse 1.5s infinite;
   z-index: 1000;
   font-size: 24px; /* Smaller size */
-  color: lightblue; /* Light blue color */
 }
 
 /* Animation for the Mute Button */
