@@ -34,6 +34,10 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
    
     </head>
+
+     <!-- Floating Mute Button -->
+     <button id="muteButton" class="mute-btn"><i class="fi fi-tr-volume-mute"></i></button>
+
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
@@ -457,7 +461,33 @@
             </script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.js"></script>    
           
-          
+            <script>
+                // 1. Create the Audio Object
+                const audio = new Audio("img/two-lanes.mp3"); // Replace with your audio file URL
+                audio.loop = true;
+                audio.autoplay = true;
+                audio.volume = 0.1; // Sets volume to 10%
+            
+            
+                // 2. Get the Mute Button and Set Mute Status
+                const muteButton = document.getElementById('muteButton');
+                let isMuted = false;
+            
+                // 3. Toggle Mute Status When Button is Clicked
+                muteButton.addEventListener('click', () => {
+                    isMuted = !isMuted;
+                    audio.muted = isMuted;
+                    muteButton.style.backgroundColor = isMuted ? "rgba(255, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.8)";
+                });
+            
+                // 4. Start Playing the Audio on Page Load
+                document.addEventListener('DOMContentLoaded', () => {
+                    audio.play().catch(error => {
+                        console.error("Autoplay blocked. Interaction required to start audio:", error);
+                    });
+                });
+            </script>
+            
 
         </body>
     </html>

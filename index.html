@@ -19,6 +19,10 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     </head>
+
+
+        <!-- NPM swiper-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
@@ -55,6 +59,8 @@
             </div>
         </nav>
 
+         <!-- Floating Mute Button -->
+    <button id="muteButton" class="mute-btn"><i class="fi fi-tr-volume-mute"></i></button>
 
          <!-- Background image -->
 <div id="intro" class="bg-image vh-100 shadow-1-strong">
@@ -197,6 +203,43 @@
 
             <!-- End of jumbotron section -->
 
+
+             <!-- ====================== Start Partner Section ====================== -->
+<section class="speedyui speedyui-partner bg-light mb-n5">
+    <div class="container">   
+        <h3 class="text-center mb-2">Your next big idea starts here</h3>
+        <div class="swiper-content position-relative mt-5 px-5">
+            <div class="swiper partnerswiper">
+                <div class="swiper-wrapper">    
+                    <div class="swiper-slide  p-4 rounded-pill bg-light d-flex justify-content-center align-items-center">
+                        <img src="img/icons/bootstrap.png" width="100" height="100"/>
+                    </div>
+                    <div class="swiper-slide  p-4 rounded-pill bg-light d-flex justify-content-center align-items-center">
+                        <img src="img/icons/ccs-2.png" width="100" height="100" />
+                    </div>
+                    <div class="swiper-slide  p-4 rounded-pill bg-light d-flex justify-content-center align-items-center">
+                        <img src="img/icons/js.png" width="100" height="100" />
+                    </div>
+                    <div class="swiper-slide  p-4 rounded-pill bg-light d-flex justify-content-center align-items-center">
+                        <img src="img/icons/html-1.png" width="100" height="100" />
+                    </div>
+                    <div class="swiper-slide  p-4 rounded-pill bg-light d-flex justify-content-center align-items-center">
+                        <img src="img/icons/linux.png" width="100" height="95" />
+                    </div>
+                    <div class="swiper-slide  p-4 rounded-pill bg-light d-flex justify-content-center align-items-center">
+                        <img src="img/icons/wordpress.png" width="100" height="95" />
+                    </div>
+                    <div class="swiper-slide p-4 rounded-pill bg-light d-flex justify-content-center align-items-center">
+                        <img src="img/icons/ubuntu.png" width="100" height="95" />
+                    </div>
+                </div><!--.swiper-wrapper-->
+            </div><!--.swiper-->
+            <div class="swiper-button-next bg-white rounded-circle"></div>
+            <div class="swiper-button-prev bg-white rounded-circle"></div><!--.swiper-btns-->
+        </div><!--.content-->
+    </div><!--.container-->
+</section>
+
             
 
             <!--====================== Start Partner Section ======================-->
@@ -247,6 +290,8 @@
     </div><!--.container-->
 </section>
 <!--====================== End Partner Section ======================-->
+
+
 
             <!-- Begin service section with icons on top -->
 
@@ -491,5 +536,66 @@
                 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
                 crossorigin="anonymous"></script>
+
+                <script>
+                    // 1. Create the Audio Object
+                    const audio = new Audio("img/two-lanes.mp3"); // Replace with your audio file URL
+                    audio.loop = true;
+                    audio.autoplay = true;
+                    audio.volume = 0.1; // Sets volume to 10%
+                
+                
+                    // 2. Get the Mute Button and Set Mute Status
+                    const muteButton = document.getElementById('muteButton');
+                    let isMuted = false;
+                
+                    // 3. Toggle Mute Status When Button is Clicked
+                    muteButton.addEventListener('click', () => {
+                        isMuted = !isMuted;
+                        audio.muted = isMuted;
+                        muteButton.style.backgroundColor = isMuted ? "rgba(255, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.8)";
+                    });
+                
+                    // 4. Start Playing the Audio on Page Load
+                    document.addEventListener('DOMContentLoaded', () => {
+                        audio.play().catch(error => {
+                            console.error("Autoplay blocked. Interaction required to start audio:", error);
+                        });
+                    });
+                </script>
+
+                 <!-- this for the counters-->
+            <script>
+                function animateCount(elementId, start, end, duration) {
+                    let startTimestamp = null;
+                    const step = (timestamp) => {
+                        if (!startTimestamp) startTimestamp = timestamp;
+                        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                        document.getElementById(elementId).textContent = Math.floor(progress * (end - start) + start);
+                        if (progress < 1) {
+                            window.requestAnimationFrame(step);
+                        }
+                    };
+                    window.requestAnimationFrame(step);
+                }
+        
+                function startCounting(entries, observer) {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animateCount('count1', 0, 100, 2000);
+                            animateCount('count2', 0, 100, 2000);
+                            animateCount('count3', 0, 100, 2000);
+                            animateCount('count4', 0, 100, 2000);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }
+        
+                const observer = new IntersectionObserver(startCounting);
+                document.querySelectorAll('.col-md-3').forEach(counter => {
+                    observer.observe(counter);
+                });
+            </script>
+                
         </body>
     </html>
