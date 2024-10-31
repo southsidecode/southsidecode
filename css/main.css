@@ -631,3 +631,6 @@ footer {
   }
 }
 
+.card:hover {
+  transform: translateY(-5px); /* Raise the card on hover */
+  transition: transform 0.3s; /* Smooth transition */
