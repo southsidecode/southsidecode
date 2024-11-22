@@ -29,8 +29,8 @@
 
         <!-- NPM swiper-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="img/favicon.png" width="60" height="60" alt="southsidecode logo img">
@@ -198,7 +198,7 @@
                     <div class="col-md-12 mt-4 text-center">
                         <a class="btn btn-md custom-gradient-btn" href="contact.html">
                             <span>Contact Us</span>
-                        </a>                        
+                        </a>
                     </div>
                         </p>
                     </div></div>
@@ -211,7 +211,7 @@
 
 
         <!-- End of warning website -->
-        
+
         <div class="container mb-5 mt-4 mt-5" style="background: linear-gradient(135deg, rgba(26, 129, 189, 0.795), rgba(197, 15, 197, 0.418)); padding: 100px; border-radius: 15px; opacity: 0.8;">
             <div class="row text-center text-white">
                 <div class="col-md-3 mb-4" id="counter1">
@@ -265,7 +265,7 @@
             <div class="col-xl-4 col-lg-5 my-3">
                 <h2 class="display-6 mb-4 fw-semibold">Our partners support us always</h2>
                 <p class="text-muted fs-5 fw-light">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit et fames maecenas amet 
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit et fames maecenas amet
                 </p>
             </div><!--.col-grid-->
             <div class="col-xl-7 col-lg-7 offset-xl-1 my-3">
@@ -311,7 +311,7 @@
 
             <!-- Begin service section with icons on top -->
 
-        
+
 
             <div class="py-5 service-6">
                 <div class="container">
@@ -345,7 +345,7 @@
                             </div>
                         </div>
                     </div>
-            
+
                     <!-- Row 2 -->
                     <div class="row mt-4">
                         <!-- Column 4 -->
@@ -362,7 +362,7 @@
                             <div class="card border-0 bg-secondary-gradiant text-white mb-4">
                                 <div class="card-body">
                                     <h6 class="font-weight-medium text-white">E-mail Automation</h6>
-                                    <p class="mt-3">Treamlining your communication workflows with email automation, we enhance efficiency and engagement, delivering personalized experiences seamlessly. 
+                                    <p class="mt-3">Treamlining your communication workflows with email automation, we enhance efficiency and engagement, delivering personalized experiences seamlessly.
 
                                     </p>
                                 </div>
@@ -378,11 +378,11 @@
                             </div>
                         </div>
                     </div>
-            
-                    
+
+
                 </div>
             </div>
-            
+
 
             <!-- End service section with icons on top-->
 
@@ -559,19 +559,19 @@
                     audio.loop = true;
                     audio.autoplay = true;
                     audio.volume = 0.1; // Sets volume to 10%
-                
-                
+
+
                     // 2. Get the Mute Button and Set Mute Status
                     const muteButton = document.getElementById('muteButton');
                     let isMuted = false;
-                
+
                     // 3. Toggle Mute Status When Button is Clicked
                     muteButton.addEventListener('click', () => {
                         isMuted = !isMuted;
                         audio.muted = isMuted;
                         muteButton.style.backgroundColor = isMuted ? "rgba(255, 0, 0, 0.8)" : "rgba(255, 255, 255, 0.8)";
                     });
-                
+
                     // 4. Start Playing the Audio on Page Load
                     document.addEventListener('DOMContentLoaded', () => {
                         audio.play().catch(error => {
@@ -594,7 +594,7 @@
                     };
                     window.requestAnimationFrame(step);
                 }
-        
+
                 function startCounting(entries, observer) {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
@@ -606,12 +606,12 @@
                         }
                     });
                 }
-        
+
                 const observer = new IntersectionObserver(startCounting);
                 document.querySelectorAll('.col-md-3').forEach(counter => {
                     observer.observe(counter);
                 });
             </script>
-                
+
         </body>
     </html>
