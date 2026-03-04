@@ -1,603 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Southsidecode</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap SCSS Starter</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
 
-        <!-- Favicon -->
-        <link rel="icon" href="./img/favicon.png" alt="Southsidecode Logo" height="100" class="me-5">
-
-        
-        <!-- MDB Bootstrap CSS -->
-        <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css"
-        rel="stylesheet"
-    />
-
-    <!-- MDBootstrap Icons (Optional) -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-
-         <!-- my icon set-->
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
-
-
-        <!-- my custom css-->
-
-        <link rel="stylesheet" href="css/main.css">
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
-
-
-        <!-- my google fonts -->
-
-        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-    </head>
-
-
-        <!-- NPM swiper-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/favicon.png" width="60" height="60" alt="southsidecode logo img">
-                  </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"  href="projects.html">projects
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact us
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-
-         <!-- Background image -->
-<div id="intro" class="bg-image vh-100 shadow-1-strong">
-    <video
-        style="min-width: 100%; min-height: 100%;"
-        playsinline
-        autoplay
-        muted
-        loop>
-        <source
-            class="h-100"
-            src="https://mdbootstrap.com/img/video/Lines.mp4"
-            type="video/mp4"/>
-    </video>
-    <div class="mask" style="
-        background: linear-gradient(
-            45deg,
-            rgba(29, 236, 197, 0.7),
-            rgba(91, 14, 214, 0.7) 100%
-        );
-    ">
-        <div class="container d-flex align-items-center justify-content-center text-center h-100">
-            <div class="text-white" data-mdb-theme="dark">
-                <h1 class="mb-3">We are SouthsideCode</h1>
-                <h5 class="mb-4">We craft awesome websites</h5>
-                <a class="btn btn-outline-light btn-lg m-2" href="services.html" role="button" data-mdb-ripple-init>Services</a>
-                <a class="btn btn-outline-light btn-lg m-2" href="about.html" role="button" data-mdb-ripple-init>About</a>
-            </div>
-        </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">SouthSideCode</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="#">Home 🏠</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="#">About 😎</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="#">Services ⚡</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="#">Portfolio 🎨</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="#">Contact ✉️</a>
+        </li>
+      </ul>
     </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="intro" class="position-relative vh-100 overflow-hidden">
+
+  <!-- Video Background -->
+  <video id="heroVideo" autoplay muted loop playsinline class="position-absolute top-50 start-50 translate-middle min-vw-100 min-vh-100 object-fit-cover">
+  <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4">
+</video>
+
+  <!-- Gradient Overlay -->
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="
+      background: linear-gradient(
+        45deg,
+        rgba(37,150,190,0.7),
+        rgba(209,0,146,0.7),
+        rgba(41,16,125,0.7),
+        rgba(64,12,112,0.7),
+        rgba(69,13,146,0.7)
+      );
+  "></div>
+
+  <!-- Hero Content -->
+  <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center text-white position-relative">
+    <h1 class="mb-3 display-3 fw-bold hero-title">
+      Welcome to <span class="gradient-text">SouthSideCode 🚀💻</span>
+    </h1>
+    <h5 class="mb-4 fs-4 hero-subtitle">We craft awesome websites, scalable systems, and sprinkle fun & emojis everywhere 😎✨</h5>
+    <div>
+      <a href="#services" class="btn btn-outline-light btn-lg m-2">Services</a>
+      <a href="#about" class="btn btn-outline-light btn-lg m-2">About</a>
+    </div>
+  </div>
+
+  <!-- Floating Emojis -->
+  <div class="floating-emoji" style="--i:1;">💻</div>
+  <div class="floating-emoji" style="--i:2;">🚀</div>
+  <div class="floating-emoji" style="--i:3;">🎨</div>
+  <div class="floating-emoji" style="--i:4;">✨</div>
+  <div class="floating-emoji" style="--i:5;">⚡</div>
+
+</section>
+
+  
+
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Card 1: Web Development -->
+      <div class="col-md-4">
+        <div class="card h-100 text-white card-hover" style="background: linear-gradient(135deg, #2596be, #400c70);">
+          <div class="card-body text-center">
+            <i class="bi bi-code-slash fs-1 mb-3"></i>
+            <h5 class="card-title mb-2">Web Development 💻</h5>
+            <p class="card-text">Building scalable, fast, and modern web applications with clean code and playful features.</p>
+            <!-- Like Button -->
+            <button class="btn btn-like" data-card="webdev">
+              <i class="bi bi-hand-thumbs-up like-icon"></i>
+              <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Web Design -->
+      <div class="col-md-4">
+        <div class="card h-100 text-white card-hover" style="background: linear-gradient(135deg, #d10092, #450d92);">
+          <div class="card-body text-center">
+            <i class="bi bi-brush fs-1 mb-3"></i>
+            <h5 class="card-title mb-2">Web Design 🎨</h5>
+            <p class="card-text">Crafting beautiful, user-friendly interfaces with animations, gradients, and a touch of humor.</p>
+            <!-- Like Button -->
+            <button class="btn btn-like" data-card="webdesign">
+              <i class="bi bi-hand-thumbs-up like-icon"></i>
+              <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Coming Soon -->
+      <div class="col-md-4">
+        <div class="card h-100 text-white card-hover" style="background: linear-gradient(135deg, #29107D, #d10092);">
+          <div class="card-body text-center">
+            <i class="bi bi-lightning fs-1 mb-3"></i>
+            <h5 class="card-title mb-2">Coming Soon ⚡</h5>
+            <p class="card-text">More awesome services for your projects. Stay tuned for surprises from SouthSideCode!</p>
+            <!-- Like Button -->
+            <button class="btn btn-like" data-card="comingsoon">
+              <i class="bi bi-hand-thumbs-up like-icon"></i>
+              <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="hero-jumbotron d-flex align-items-center text-white">
+  <div class="container text-center">
+
+    <div class="glass-box p-5">
+
+      <h1 class="display-3 fw-bold mb-3 gradient-text">
+        Turning Ideas Into Powerful Digital Reality
+      </h1>
+
+      <p class="lead mb-4">
+        SouthSideCode builds fast, modern, and scalable web systems 
+        designed to elevate your brand and dominate online presence.
+      </p>
+
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="#services" class="btn btn-lg btn-primary px-4 rounded-pill">
+          Explore Our Work 🚀
+        </a>
+        <a href="#contact" class="btn btn-lg btn-outline-light px-4 rounded-pill">
+          Start a Project
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="corporate-section py-5">
+  <div class="container">
+
+    <!-- Heading Block -->
+    <div class="text-center mb-5">
+      <h2 class="corporate-title">
+        Strategic Digital Solutions Built for Growth
+      </h2>
+      <p class="corporate-subtitle mt-3">
+        Precision. Performance. Partnership.
+      </p>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row align-items-center corporate-content">
+
+      <div class="col-md-6 corporate-col fade-in-left">
+        <p>
+          At <strong>SouthSideCode</strong>, we treat every project as a long-term investment
+          in your brand’s digital infrastructure. Our development process is grounded in
+          clean architecture, optimized performance, and scalable systems that adapt as
+          your business evolves. We don’t chase trends — we engineer reliability.
+        </p>
+      </div>
+
+      <div class="col-md-6 corporate-col fade-in-right">
+        <p>
+          From refined UI design to backend efficiency, every element is crafted
+          with intention and measurable outcomes in mind. We collaborate closely,
+          communicate clearly, and deliver solutions that not only look professional —
+          but drive real business results.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="app-section py-5">
+  <div class="container text-white">
+
+    <div class="text-center mb-5">
+      <h2 class="app-title">Engineered for Performance</h2>
+      <p class="app-subtitle">Built Like Software. Delivered Like Strategy.</p>
+    </div>
+
+    <!-- Metrics Row -->
+    <div class="row text-center g-4 mb-5">
+
+      <div class="col-md-4">
+        <div class="metric-card">
+          <h3 class="counter" data-target="100">0</h3>
+          <p>Performance Optimized</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="metric-card">
+          <h3 class="counter" data-target="24">0</h3>
+          <p>Hour Turnaround Support</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="metric-card">
+          <h3 class="counter" data-target="99">0</h3>
+          <p>Client Satisfaction</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Feature Grid -->
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="feature-card">
+          <h5>⚡ Lightning Speed</h5>
+          <p>Optimized builds, lean code, and performance-first architecture.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card">
+          <h5>🔐 Secure by Design</h5>
+          <p>Best-practice security and hardened deployment pipelines.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card">
+          <h5>📈 Scalable Systems</h5>
+          <p>Infrastructure built to grow with your business.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="saas-parallax-section d-flex align-items-center justify-content-center text-white">
+
+  <!-- Gradient overlay -->
+  <div class="gradient-overlay"></div>
+
+  <!-- Floating tech particles -->
+  <div class="tech-particles">
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+  </div>
+
+  <!-- Main Content Container -->
+  <div class="container text-center parallax-content">
+
+    <!-- Heading & Subtitle -->
+    <h2 class="parallax-title">
+      Powering Next-Gen Digital Experiences
+    </h2>
+
+    <p class="parallax-subtitle mt-4">
+      SouthSideCode builds high-performance, scalable web systems that accelerate business growth.
+    </p>
+
+    <a href="#contact" class="btn btn-saas mt-4 px-5 py-3 rounded-pill">
+      Launch Your Project
+    </a>
+
+    <!-- ============================= -->
+    <!-- Counters Row -->
+    <!-- ============================= -->
+    <div class="row text-center g-4 mt-5">
+      <div class="col-md-4">
+        <div class="metric-card p-4 rounded">
+          <h3 class="counter" data-target="150">0</h3>
+          <p>Projects Completed</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="metric-card p-4 rounded">
+          <h3 class="counter" data-target="99">0</h3>
+          <p>Client Satisfaction %</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="metric-card p-4 rounded">
+          <h3 class="counter" data-target="24">0</h3>
+          <p>Hour Support</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="tech-stack-section py-5">
+
+  <div class="container">
+    
+    <div class="text-center mb-5">
+      <h3 class="text-white">Our Technology Stack</h3>
+      <p class="text-light opacity-75">Built with modern, scalable technologies</p>
+    </div>
+
+    <div class="row text-center g-4">
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="tech-card p-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" class="tech-logo" alt="Bootstrap">
+          <p class="mt-3">Bootstrap</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="tech-card p-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" class="tech-logo" alt="Linux">
+          <p class="mt-3">Linux</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="tech-card p-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="tech-logo" alt="JavaScript">
+          <p class="mt-3">JavaScript</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="tech-card p-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="tech-logo" alt="HTML">
+          <p class="mt-3">HTML5</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="tech-card p-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="tech-logo" alt="CSS3">
+          <p class="mt-3">CSS3</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="tech-card p-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" class="tech-logo" alt="WordPress">
+          <p class="mt-3">WordPress</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="cta-section d-flex align-items-center">
+
+  <div class="container text-center">
+
+    <h2 class="cta-title">
+      Ready to Build Something Powerful?
+    </h2>
+
+    <p class="cta-subtitle mt-4">
+      Let’s turn your idea into a scalable, high-performance digital system.
+    </p>
+
+    <div class="mt-5">
+      <a href="#contact" class="btn btn-cta-primary px-5 py-3 me-3">
+        Start Your Project
+      </a>
+
+      <a href="#portfolio" class="btn btn-cta-outline px-5 py-3">
+        View Our Work
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="main-footer">
+
+  <div class="container">
+
+    <div class="row g-5">
+
+      <!-- Brand Column -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="footer-brand">SouthSideCode</h4>
+        <p class="footer-text mt-3">
+          We build scalable, high-performance digital systems powered by modern web technologies.
+        </p>
+
+        <div class="social-icons mt-4">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="footer-heading">Company</h6>
+        <ul class="footer-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Process</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-heading">Services</h6>
+        <ul class="footer-links">
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">WordPress Systems</a></li>
+          <li><a href="#">Linux Server Setup</a></li>
+          <li><a href="#">UI / UX Design</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-heading">Stay Updated</h6>
+        <p class="footer-text">Get insights on high-performance web systems.</p>
+
+        <form class="newsletter-form mt-3">
+          <input type="email" placeholder="Enter your email">
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- Subfooter -->
+<div class="sub-footer">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <p class="mb-2 mb-md-0">© 2026 SouthSideCode. All rights reserved.</p>
+    <p class="mb-0">Built with precision ⚡ Powered by High-Tech Systems</p>
+  </div>
 </div>
 
-        <!-- the text below the header section -->
-
-        <div class="section" id="textbelowheadersection">
-            <div class="container text-center pt-5">
-                <div class="row">
-                    <div class="col">
-                        <div class="display-4">This is what we have to offer</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- end of the text below the header section -->
-
-        <!-- section for three icons below the video background-->
-        <section class="pt-5 mt-3">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                        <div class="card h-100">
-                            <div
-                                class="bg-image hover-overlay"
-                                data-mdb-ripple-init="data-mdb-ripple-init"
-                                data-mdb-ripple-color="light">
-                                <img src="img/coder.png" class="img-fluid"/>
-                                <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Web development</h5>
-                                <p class="card-text">Crafting digital experiences that captivate and engage, our
-                                    web development expertise transforms your vision into stunning online realities.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="card h-100">
-                            <div
-                                class="bg-image hover-overlay"
-                                data-mdb-ripple-init="data-mdb-ripple-init"
-                                data-mdb-ripple-color="light">
-                                <img src="img/web-design.png" class="img-fluid"/>
-                                <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                </a>
-                            </div>
-                            <div class="card-body mt-4">
-                                <h5 class="card-title">Web Design</h5>
-                                <p class="card-text">At Southside Code, we craft digital masterpieces where creativity meets functionality. Experience excellence with our tailored designs, perfectly meeting your project needs.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="card h-100">
-                            <div
-                                class="bg-image hover-overlay"
-                                data-mdb-ripple-init="data-mdb-ripple-init"
-                                data-mdb-ripple-color="light">
-                                <img src="img/google-service.png" class="img-fluid"/>
-                                <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Google Services</h5>
-                                <p class="card-text">Unlocking the power of Google's suite of services, we
-                                    optimize your online presence for enhanced visibility and performance</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- end of thre icons section-->
-
-            <!-- begin jumbotron section-->
-
-            <div class="container mt-5 mb-5 pb-3 pt-4" id="lesego">
-                <div class="row">
-                    <div class="col-md-8"><div class="jumbotron">
-                        <h1 class="display-4">Create your beautiful website with Us</h1>
-                        <p class="lead">We are a compact team of freelancers, united in our pursuit of
-                            crafting exceptional web development solutions. Our focus lies in leveraging
-                            reliable web technologies, with Linux as our primary operating system. We
-                            specialize in utilizing frameworks like WordPress, providing clients with
-                            customizable back-end access for seamless website management. Employing
-                            Bootstrap framework ensures not only elegant design but also advanced
-                            functionalities. Additionally, we offer custom-made mail servers to fortify
-                            email security. Harnessing the power of online marketing, we help businesses
-                            attract customers effectively.
-                        </p>
-                        <hr class="my-4">
-                        <p>Contact us today for a personalized quote on our marketing services.</p>
-                        <p class="lead">
-                    <!-- Button Section -->
-                    <div class="col-md-12 mt-4 text-center">
-                        <a class="btn btn-md custom-gradient-btn" href="contact.html">
-                            <span>Contact Us</span>
-                        </a>
-                    </div>
-                        </p>
-                    </div></div>
-                    <div class="col-md-4 d-flex justify-content-center align-items-center">  <img src="img/rocket.png" alt="email icon" width="130" height="130"/>
-                    </div>
-                  </div>
-            </div>
-
-            <!-- End of jumbotron section -->
-
-
-        <!-- End of warning website -->
-
-        <div class="container mb-5 mt-4 mt-5" style="background: linear-gradient(135deg, rgba(26, 129, 189, 0.795), rgba(197, 15, 197, 0.418)); padding: 100px; border-radius: 15px; opacity: 0.8;">
-            <div class="row text-center text-white">
-                <div class="col-md-3 mb-4" id="counter1">
-                    <div class="card text-center text-white bg-transparent border-0">
-                        <div class="card-body">
-                            <i class="fi fi-tr-square-terminal"></i>
-                            <h1 id="count1" class="text-white" style="font-size: 3rem;">0</h1>
-                            <div style="height: 4px; width: 50px; background-color: white; margin: 0 auto; padding-bottom: 5px;"></div>
-                            <p style="color: white">Lines of code</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4" id="counter2">
-                    <div class="card text-center text-white bg-transparent border-0">
-                        <div class="card-body">
-                            <i class="fi fi-tr-percentage"></i>
-                            <h1 id="count2" class="text-white" style="font-size: 3rem;">0</h1>
-                            <div style="height: 4px; width: 50px; background-color: white; margin: 0 auto; pb-3"></div>
-                            <p style="color: white">Satisfaction rate</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4" id="counter3">
-                    <div class="card text-center text-white bg-transparent border-0">
-                        <div class="card-body">
-                            <i class="fi fi-tr-face-smile-hearts"></i>
-                            <h1 id="count3" class="text-white" style="font-size: 3rem;">0</h1>
-                            <div style="height: 4px; width: 50px; background-color: white; margin: 0 auto; pb-3"></div>
-                            <p style="color: white">Loved by</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4" id="counter4">
-                    <div class="card text-center text-white bg-transparent border-0">
-                        <div class="card-body">
-                            <i class="fi fi-tr-customization"></i>
-                            <h1 id="count4" class="text-white" style="font-size: 3rem;">0</h1>
-                            <div style="height: 4px; width: 50px; background-color: white; margin: 0 auto; pb-3"></div>
-                            <p style="color: white">Projects completed</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <!-- end of this section -->
-
-            <!--====================== Start Partner Section ======================-->
-<section class="speedyui speedyui-partner mb-5 pt-4">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-4 col-lg-5 my-3">
-                <h2 class="display-6 mb-4 fw-semibold">Our partners support us always</h2>
-                <p class="text-muted fs-5 fw-light">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit et fames maecenas amet
-                </p>
-            </div><!--.col-grid-->
-            <div class="col-xl-7 col-lg-7 offset-xl-1 my-3">
-                <div class="row g-0">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="partner-wrapper d-flex align-items-center justify-content-center w-100 p-3 text-center">
-                            <img src="img/icons/ubuntu.png" class="img-fluid" width="125" alt="" />
-                        </div><!--.partner-wrapper-->
-                    </div><!--.col-grid-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="partner-wrapper d-flex align-items-center justify-content-center w-100 p-3 text-center">
-                            <img src="img/icons/html-1.png" class="img-fluid" width="125" alt="" />
-                        </div><!--.partner-wrapper-->
-                    </div><!--.col-grid-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="partner-wrapper d-flex align-items-center justify-content-center w-100 p-3 text-center">
-                            <img src="img/icons/wordpress.png" class="img-fluid" width="125"/>
-                        </div><!--.partner-wrapper-->
-                    </div><!--.col-grid-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="partner-wrapper d-flex align-items-center justify-content-center w-100 p-3 text-center">
-                            <img src="img/icons/bootstrap.png" class="img-fluid" width="125" alt="" />
-                        </div><!--.partner-wrapper-->
-                    </div><!--.col-grid-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="partner-wrapper d-flex align-items-center justify-content-center w-100 p-3 text-center">
-                            <img src="img/icons/ccs-2.png" class="img-fluid" width="125" alt="" />
-                        </div><!--.partner-wrapper-->
-                    </div><!--.col-grid-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="partner-wrapper d-flex align-items-center justify-content-center w-100 p-3 text-center">
-                            <img src="img/icons/js.png" class="img-fluid" width="125" alt="" />
-                        </div><!--.partner-wrapper-->
-                    </div><!--.col-grid-->
-                </div><!--.row-->
-            </div><!--.col-grid-->
-        </div><!--.row-->
-    </div><!--.container-->
-</section>
-<!--====================== End Partner Section ======================-->
-
-
-
-            <!-- Begin service section with icons on top -->
-
-
-
-            <div class="py-5 service-6">
-                <div class="container">
-                    <!-- Row 1 -->
-                    <div class="row">
-                        <!-- Column 1 -->
-                        <div class="col-md-4 wrap-service6-box">
-                            <div class="card border-0 bg-success-gradiant text-white mb-4">
-                                <div class="card-body">
-                                    <h6 class="font-weight-medium text-white">Linux Servers</h6>
-                                    <p class="mt-3">Harnessing the robust reliability of Linux servers, we fortify your digital infrastructure for seamless operations and heightened security. LAMP</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 2 -->
-                        <div class="col-md-4 wrap-service6-box">
-                            <div class="card border-0 bg-info-gradiant text-white mb-4">
-                                <div class="card-body">
-                                    <h6 class="font-weight-medium text-white">Mail Server</h6>
-                                    <p class="mt-3">Crafting tailored E-mail server solutions, we ensure the security and efficiency of your email communications, personalized to your unique needs.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 3 -->
-                        <div class="col-md-4 wrap-service6-box">
-                            <div class="card border-0 bg-danger-gradiant text-white mb-4">
-                                <div class="card-body">
-                                    <h6 class="font-weight-medium text-white">Google Services</h6>
-                                    <p class="mt-3">Maximizing the potential of Google's suite of services, we tailor your online presence for optimal performance and visibility.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Row 2 -->
-                    <div class="row mt-4">
-                        <!-- Column 4 -->
-                        <div class="col-md-4 wrap-service6-box">
-                            <div class="card border-0 bg-purple-gradiant text-white mb-4">
-                                <div class="card-body">
-                                    <h6 class="font-weight-medium text-white">Open Source</h6>
-                                    <p class="mt-3">Embracing the power of open source technologies, we empower your digital initiatives with flexible, innovative solutions tailored to your specific requirements.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 5 -->
-                        <div class="col-md-4 wrap-service6-box">
-                            <div class="card border-0 bg-secondary-gradiant text-white mb-4">
-                                <div class="card-body">
-                                    <h6 class="font-weight-medium text-white">E-mail Automation</h6>
-                                    <p class="mt-3">Treamlining your communication workflows with email automation, we enhance efficiency and engagement, delivering personalized experiences seamlessly.
-
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 6 -->
-                        <div class="col-md-4 wrap-service6-box">
-                            <div class="card border-0 bg-dark-gradiant text-white mb-4">
-                                <div class="card-body">
-                                    <h6 class="font-weight-medium text-white">photography</h6>
-                                    <p class="mt-3">Capturing moments that tell your story, our photography team brings your vision to life with creativity and authenticity, leaving a long lasting impression. Contact us for more</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-
-            <!-- End service section with icons on top-->
-
-
-
-            <!-- waring section -->
-
-            <section class="warning-sec">
-                <div class="container mt-5 mb-5">
-                    <div class="row">
-                        <div class="container d-flex justify-content-center mb-4 mt-5">
-                            <div class="col-sm-12 col-md-10 col-lg-10">
-                                <div class="alert alert-danger d-flex align-items-center" role="alert">
-                                    <svg
-                                        class="bi bi-exclamation-triangle-fill p-3"
-                                        width="6em"
-                                        height="6em"
-                                        viewbox="0 0 16 16"
-                                        fill="currentColor"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 5zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
-                                    </svg>
-                                    <div class="ml-3">
-                                        To our visitor's our website is still in development, we decided to push for
-                                        production to showcase our work. Its a working progress in production. We are
-                                        constantley making changes to our site to improve userbility and performance,
-                                        some elements may not work or appear as they should. Please be aware. This
-                                        current website is new and its still in its infancy . thank you in advanced.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- End of warning website -->
-
-            <!--Begin last section of the homepage-->
-            <div class="newslatter-section text-indigo mt-3">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-12 text-center text-white">
-                            <h3 class="display-4 fw-bold lh-1 mb-3">We build perfectly engineered website's.</h3>
-                                <br>
-                                <h2 class="lead">
-                                    Loading at lightning speed, with stunning user interfaces.</h2>
-                                <br>
-                                <a class="btn btn-info btn-md" href="contact.html" role="button">Contact us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End last section of the homepage -->
-
-            <!-- my footer-->
-            <div class="container-fluid bg-light mb-n4">
-                <div class="container pt-4 my-md-5 pt-md-5">
-
-                    <div class="row">
-                        <div class="col-12 col-md">
-                            <img class="mb-2" src="img/bootstrap-logo.svg" alt="" width="24" height="19">
-                            <small class="d-block mb-3 text-muted">Built with
-                                <a href="#">bootstrap</a>
-                                &amp; made with 💙 by Lesego Molifi
-                                <div class="pb-2"></div>
-                                We are a small team of freelancer's located in Johannesburg, Florida building
-                                proper websites for our client's in South Africa.😉
-                            </small>
-                        </div>
-                        <div class="col-6 col-md">
-                            <h5>Other Services</h5>
-                            <ul class="list-unstyled text-small">
-                                <li class="mb-1">
-                                    <a class="link-secondary text-decoration-none disabled" href="#">South011</a>
-                                    <span class="badge bg-primary rounded-pill">disabled links</span></li>
-                                <li class="mb-1">
-                                    <a class="link-secondary text-decoration-none disabled" href="#">E-mail Automation</a>
-                                </li>
-                                <li class="mb-1">
-                                    <a class="link-secondary text-decoration-none disabled" href="#">Domains</a>
-                                </li>
-                                <li class="mb-1">
-                                    <a class="link-secondary text-decoration-none disabled" href="#">Google Services</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-6 col-md">
-                            <h5>Dev Resources</h5>
-                            <ul class="list-unstyled text-small">
-                                <li class="mb-1">
-                                    <a class="link-secondary text-decoration-none" href="mail-conf.html">Mail setup</a>
-                                </li>
-                                <li class="mb-1">
-                                    <a class="link-secondary text-decoration-none" href="bootstrapmade.com">Bootstrap</a>
-                                </li>
-                                <li class="mb-1">
-                                    <a class="link-secondary text-decoration-none" href="wordpress.org">Wordpress</a>
-                                </li>
-                                <li class="mb-1">
-                                    <a class="link-secondary text-decoration-none" href="digitalocean.com">LAMP STACK</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-6 col-md">
-                            <h5>About</h5>
-                            <ul class="list-unstyled text-small">
-                                <li class="mb-1">
-                                    <a class="link-secondary text-decoration-none" href="faq.html">FAQ</a>
-                                </li>
-                                <li class="mb-1">
-                                    <a class="link-secondary text-decoration-none" href="privacy.html">Privacy</a>
-                                </li>
-                                <li class="mb-1">
-                                    <a class="link-secondary text-decoration-none" href="terms.html">Terms</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="container">
-                    <footer
-                        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-info">
-                        <div class="col-md-4 d-flex align-items-center">
-                            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                                <svg class="bi" width="30" height="24">
-                                    <use xlink:href="#bootstrap"></use>
-                                </svg>
-                            </a>
-                            <span class="mb-3 mb-md-0 text-muted">© 2025 southsidecode</span>
-                        </div>
-
-                        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                            <li class="ms-3">
-                                <a class="text-muted" href="#">
-                                    <svg class="bi" width="24" height="24">
-                                        <use xlink:href="#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="ms-3">
-                                <a class="text-muted" href="#">
-                                    <svg class="bi" width="24" height="24">
-                                        <use xlink:href="#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="ms-3">
-                                <a class="text-muted" href="#">
-                                    <svg class="bi" width="24" height="24">
-                                        <use xlink:href="#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </footer>
-                </div>
-            </div>
-            <!-- End of Footer-->
-
-            <!-- MDB Bootstrap JS -->
-            <script
-            type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.js"
-        ></script>
-
-                
-                 <!-- this for the counters-->
-            <script>
-                function animateCount(elementId, start, end, duration) {
-                    let startTimestamp = null;
-                    const step = (timestamp) => {
-                        if (!startTimestamp) startTimestamp = timestamp;
-                        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                        document.getElementById(elementId).textContent = Math.floor(progress * (end - start) + start);
-                        if (progress < 1) {
-                            window.requestAnimationFrame(step);
-                        }
-                    };
-                    window.requestAnimationFrame(step);
-                }
-
-                function startCounting(entries, observer) {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            animateCount('count1', 0, 100, 2000);
-                            animateCount('count2', 0, 100, 2000);
-                            animateCount('count3', 0, 100, 2000);
-                            animateCount('count4', 0, 100, 2000);
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }
-
-                const observer = new IntersectionObserver(startCounting);
-                document.querySelectorAll('.col-md-3').forEach(counter => {
-                    observer.observe(counter);
-                });
-            </script>
-
-        </body>
-    </html>
+<script type="module" src="./src/js/main.js"></script>
+</body>
+</html>

@@ -1,6 +1,16 @@
 {
-  "name": "mdb-standard-app",
-  "version": "7.1.0",
-  "homepage": "https://mdbootstrap.com/docs/standard/",
-  "license": "MIT"
+  "name": "code",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "@popperjs/core": "^2.11.8"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1",
+    "sass": "^1.97.3"
+  }
 }
