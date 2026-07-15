@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of web development projects - See our work and what we can build for you">
+  <title>Portfolio | Tech Minimal - Web Development Projects</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- ==========================================
+     PRELOADER
+     ========================================== -->
+<div id="preloader">
+  <div class="preloader-content text-center">
+    <div class="preloader-spinner mx-auto"></div>
+    <p class="preloader-text">Loading...</p>
+  </div>
+</div>
+
+<!-- ==========================================
+     NAVBAR
+     ========================================== -->
+<nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <i class="fas fa-code me-2"></i>TechMinimal
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="fas fa-bars" style="color: #fff; font-size: 1.5rem;"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto text-uppercase">
+        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <div class="d-flex align-items-center gap-3">
+        <button id="themeToggle" class="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="index.html#contact" class="btn-nav-cta">Get Started</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ==========================================
+     PROJECTS HERO
+     ========================================== -->
+<section class="projects-hero">
+  <div class="projects-hero-overlay"></div>
+  <div class="container">
+    <div class="projects-hero-content text-center">
+      <span class="hero-badge">Our Portfolio</span>
+      <h1 class="projects-hero-title">
+        Showcasing Our <span class="highlight">Best Work</span>
+      </h1>
+      <p class="projects-hero-subtitle">
+        Each project represents our commitment to quality, innovation, and client satisfaction.
+        Browse through our portfolio and see what we can build for you.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     FILTER BUTTONS
+     ========================================== -->
+<section class="filter-section">
+  <div class="container">
+    <div class="filter-buttons text-center">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="web">Web Development</button>
+      <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+      <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+      <button class="filter-btn" data-filter="corporate">Corporate</button>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     PROJECTS GRID
+     ========================================== -->
+<section class="projects-grid-section">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Project 1 - Web Development -->
+      <div class="col-lg-4 col-md-6 project-item" data-category="web">
+        <div class="project-card-large">
+          <div class="project-image-large" style="background: linear-gradient(135deg, #00ff9d, #00bfff);">
+            <i class="fas fa-laptop-code"></i>
+            <div class="project-overlay">
+              <a href="#" class="project-preview-btn" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                <i class="fas fa-expand"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content-large">
+            <span class="project-tag">Web Development</span>
+            <h3 class="project-title-large">Portfolio Pro</h3>
+            <p class="project-description-large">
+              A stunning portfolio website for a creative agency with dynamic content management.
+            </p>
+            <div class="project-meta">
+              <div class="project-tech-stack">
+                <span>React</span>
+                <span>Next.js</span>
+                <span>Tailwind</span>
+              </div>
+              <a href="#" class="project-link-large">
+                View Details <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 - E-Commerce -->
+      <div class="col-lg-4 col-md-6 project-item" data-category="ecommerce">
+        <div class="project-card-large">
+          <div class="project-image-large" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24);">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="project-overlay">
+              <a href="#" class="project-preview-btn" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                <i class="fas fa-expand"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content-large">
+            <span class="project-tag">E-Commerce</span>
+            <h3 class="project-title-large">Fashion Hub</h3>
+            <p class="project-description-large">
+              Full-featured online store with AI-powered product recommendations and analytics.
+            </p>
+            <div class="project-meta">
+              <div class="project-tech-stack">
+                <span>Vue.js</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+              <a href="#" class="project-link-large">
+                View Details <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 - Mobile App -->
+      <div class="col-lg-4 col-md-6 project-item" data-category="mobile">
+        <div class="project-card-large">
+          <div class="project-image-large" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7);">
+            <i class="fas fa-mobile-alt"></i>
+            <div class="project-overlay">
+              <a href="#" class="project-preview-btn" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                <i class="fas fa-expand"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content-large">
+            <span class="project-tag">Mobile App</span>
+            <h3 class="project-title-large">HealthTrack</h3>
+            <p class="project-description-large">
+              Cross-platform health tracking app with real-time monitoring and personalized insights.
+            </p>
+            <div class="project-meta">
+              <div class="project-tech-stack">
+                <span>React Native</span>
+                <span>Firebase</span>
+                <span>AI/ML</span>
+              </div>
+              <a href="#" class="project-link-large">
+                View Details <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 - Corporate -->
+      <div class="col-lg-4 col-md-6 project-item" data-category="corporate">
+        <div class="project-card-large">
+          <div class="project-image-large" style="background: linear-gradient(135deg, #fdcb6e, #f39c12);">
+            <i class="fas fa-building"></i>
+            <div class="project-overlay">
+              <a href="#" class="project-preview-btn" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                <i class="fas fa-expand"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content-large">
+            <span class="project-tag">Corporate</span>
+            <h3 class="project-title-large">FinTech Dashboard</h3>
+            <p class="project-description-large">
+              Real-time financial analytics platform for enterprise clients with advanced reporting.
+            </p>
+            <div class="project-meta">
+              <div class="project-tech-stack">
+                <span>Angular</span>
+                <span>Java</span>
+                <span>PostgreSQL</span>
+              </div>
+              <a href="#" class="project-link-large">
+                View Details <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 - Web Development -->
+      <div class="col-lg-4 col-md-6 project-item" data-category="web">
+        <div class="project-card-large">
+          <div class="project-image-large" style="background: linear-gradient(135deg, #55efc4, #00b894);">
+            <i class="fas fa-blog"></i>
+            <div class="project-overlay">
+              <a href="#" class="project-preview-btn" data-bs-toggle="modal" data-bs-target="#projectModal5">
+                <i class="fas fa-expand"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content-large">
+            <span class="project-tag">Web Development</span>
+            <h3 class="project-title-large">BlogSphere</h3>
+            <p class="project-description-large">
+              Modern blogging platform with SEO optimization and social media integration.
+            </p>
+            <div class="project-meta">
+              <div class="project-tech-stack">
+                <span>WordPress</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+              </div>
+              <a href="#" class="project-link-large">
+                View Details <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 - E-Commerce -->
+      <div class="col-lg-4 col-md-6 project-item" data-category="ecommerce">
+        <div class="project-card-large">
+          <div class="project-image-large" style="background: linear-gradient(135deg, #fd79a8, #e84393);">
+            <i class="fas fa-gift"></i>
+            <div class="project-overlay">
+              <a href="#" class="project-preview-btn" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                <i class="fas fa-expand"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content-large">
+            <span class="project-tag">E-Commerce</span>
+            <h3 class="project-title-large">GiftFinder</h3>
+            <p class="project-description-large">
+              Personalized gift recommendation platform with smart search and filters.
+            </p>
+            <div class="project-meta">
+              <div class="project-tech-stack">
+                <span>Shopify</span>
+                <span>Liquid</span>
+                <span>React</span>
+              </div>
+              <a href="#" class="project-link-large">
+                View Details <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     PROJECT STATS
+     ========================================== -->
+<section class="project-stats">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <span class="stat-number-count">50+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <span class="stat-number-count">30+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <span class="stat-number-count">15+</span>
+          <span class="stat-label">Awards</span>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <span class="stat-number-count">5+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     CTA SECTION
+     ========================================== -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content text-center">
+      <h2 class="cta-title">Ready to Build Your Project?</h2>
+      <p class="cta-subtitle">Let's create something amazing together. Get in touch today!</p>
+      <a href="index.html#contact" class="cta-btn-primary">
+        Start Your Project <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     PROJECT MODALS (Detailed View)
+     ========================================== -->
+
+<!-- Modal 1 -->
+<div class="modal fade" id="projectModal1" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Portfolio Pro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image" style="background: linear-gradient(135deg, #00ff9d, #00bfff); min-height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 4rem; color: white; opacity: 0.8;">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <div class="modal-content-body mt-4">
+          <h4>Project Overview</h4>
+          <p>A stunning portfolio website for a creative agency with dynamic content management. Features include:</p>
+          <ul>
+            <li>Dynamic content management system</li>
+            <li>Responsive design for all devices</li>
+            <li>SEO optimized structure</li>
+            <li>Fast loading with Next.js</li>
+            <li>Custom animations and transitions</li>
+          </ul>
+          <div class="modal-tech">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">Tailwind</span>
+            <span class="tech-tag">Framer Motion</span>
+          </div>
+          <div class="modal-links mt-3">
+            <a href="#" class="btn-modal">Live Demo <i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="btn-modal-secondary">View Code <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="projectModal2" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Fashion Hub</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24); min-height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 4rem; color: white; opacity: 0.8;">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div class="modal-content-body mt-4">
+          <h4>Project Overview</h4>
+          <p>Full-featured online store with AI-powered product recommendations and advanced analytics.</p>
+          <ul>
+            <li>AI-powered product recommendations</li>
+            <li>Secure payment integration (Stripe, PayPal)</li>
+            <li>Advanced inventory management</li>
+            <li>Real-time analytics dashboard</li>
+            <li>Mobile-optimized checkout</li>
+          </ul>
+          <div class="modal-tech">
+            <span class="tech-tag">Vue.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">AI/ML</span>
+          </div>
+          <div class="modal-links mt-3">
+            <a href="#" class="btn-modal">Live Demo <i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="btn-modal-secondary">View Code <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="projectModal3" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">HealthTrack</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7); min-height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 4rem; color: white; opacity: 0.8;">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <div class="modal-content-body mt-4">
+          <h4>Project Overview</h4>
+          <p>Cross-platform health tracking app with real-time monitoring and personalized insights.</p>
+          <ul>
+            <li>Real-time health monitoring</li>
+            <li>Personalized insights and recommendations</li>
+            <li>Cross-platform (iOS & Android)</li>
+            <li>Social sharing features</li>
+            <li>Health data visualization</li>
+          </ul>
+          <div class="modal-tech">
+            <span class="tech-tag">React Native</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">AI/ML</span>
+            <span class="tech-tag">WebSocket</span>
+          </div>
+          <div class="modal-links mt-3">
+            <a href="#" class="btn-modal">Live Demo <i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="btn-modal-secondary">View Code <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="projectModal4" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">FinTech Dashboard</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image" style="background: linear-gradient(135deg, #fdcb6e, #f39c12); min-height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 4rem; color: white; opacity: 0.8;">
+          <i class="fas fa-building"></i>
+        </div>
+        <div class="modal-content-body mt-4">
+          <h4>Project Overview</h4>
+          <p>Real-time financial analytics platform for enterprise clients with advanced reporting.</p>
+          <ul>
+            <li>Real-time financial data visualization</li>
+            <li>Advanced reporting and analytics</li>
+            <li>Multi-user access control</li>
+            <li>Export reports to PDF/Excel</li>
+            <li>Customizable dashboards</li>
+          </ul>
+          <div class="modal-tech">
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">D3.js</span>
+          </div>
+          <div class="modal-links mt-3">
+            <a href="#" class="btn-modal">Live Demo <i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="btn-modal-secondary">View Code <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal fade" id="projectModal5" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">BlogSphere</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image" style="background: linear-gradient(135deg, #55efc4, #00b894); min-height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 4rem; color: white; opacity: 0.8;">
+          <i class="fas fa-blog"></i>
+        </div>
+        <div class="modal-content-body mt-4">
+          <h4>Project Overview</h4>
+          <p>Modern blogging platform with SEO optimization and social media integration.</p>
+          <ul>
+            <li>SEO-optimized content structure</li>
+            <li>Social media auto-sharing</li>
+            <li>Comment system with moderation</li>
+            <li>Analytics integration</li>
+            <li>Email newsletter subscription</li>
+          </ul>
+          <div class="modal-tech">
+            <span class="tech-tag">WordPress</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">REST API</span>
+          </div>
+          <div class="modal-links mt-3">
+            <a href="#" class="btn-modal">Live Demo <i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="btn-modal-secondary">View Code <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 6 -->
+<div class="modal fade" id="projectModal6" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">GiftFinder</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image" style="background: linear-gradient(135deg, #fd79a8, #e84393); min-height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 4rem; color: white; opacity: 0.8;">
+          <i class="fas fa-gift"></i>
+        </div>
+        <div class="modal-content-body mt-4">
+          <h4>Project Overview</h4>
+          <p>Personalized gift recommendation platform with smart search and filters.</p>
+          <ul>
+            <li>AI-powered gift recommendations</li>
+            <li>Smart search and filtering</li>
+            <li>User preference profiling</li>
+            <li>Social sharing features</li>
+            <li>Mobile-optimized experience</li>
+          </ul>
+          <div class="modal-tech">
+            <span class="tech-tag">Shopify</span>
+            <span class="tech-tag">Liquid</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">AI/ML</span>
+          </div>
+          <div class="modal-links mt-3">
+            <a href="#" class="btn-modal">Live Demo <i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="btn-modal-secondary">View Code <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==========================================
+     FOOTER
+     ========================================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <h3 class="footer-brand"><i class="fas fa-code me-2"></i>TechMinimal</h3>
+        <p class="footer-description">Professional web development services that help businesses grow online.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link"><i class="fab fa-github"></i></a>
+          <a href="#" class="footer-social-link"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="footer-social-link"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Web Development</a></li>
+          <li><a href="services.html">Mobile App Design</a></li>
+          <li><a href="services.html">E-Commerce</a></li>
+          <li><a href="services.html">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h4 class="footer-title">Newsletter</h4>
+        <p class="footer-newsletter-text">Subscribe for updates and exclusive offers.</p>
+        <form class="footer-newsletter-form">
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Your Email">
+            <button class="btn-newsletter" type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechMinimal. All rights reserved.</p>
+      <div>
+        <a href="#">Privacy Policy</a>
+        <a href="#" class="ms-3">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ==========================================
+     FLOATING CTA & BACK TO TOP
+     ========================================== -->
+<a href="https://wa.me/your-number" class="floating-cta" aria-label="Contact us">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- ==========================================
+     SCRIPTS
+     ========================================== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+<!-- Filter Functionality -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        this.classList.add('active');
+
+        const filterValue = this.getAttribute('data-filter');
+
+        projectItems.forEach(item => {
+          const category = item.getAttribute('data-category');
+          
+          if (filterValue === 'all' || category === filterValue) {
+            item.style.display = 'block';
+            // Add animation
+            item.style.animation = 'fadeInUp 0.6s ease forwards';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

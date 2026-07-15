@@ -233,3 +233,4 @@ document.addEventListener('DOMContentLoaded', function() {
   console.log('%c✅ Website loaded successfully!', 'color: #00ff9d;');
 
 }); // End DOMContentLoaded
+
