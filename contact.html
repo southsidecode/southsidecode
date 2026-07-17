@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Tech Minimal - Let's discuss your project. Professional web development services">
+  <title>Contact Us | Tech Minimal - Let's Work Together</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- ==========================================
+     PRELOADER
+     ========================================== -->
+<div id="preloader">
+  <div class="preloader-content text-center">
+    <div class="preloader-spinner mx-auto"></div>
+    <p class="preloader-text">Loading...</p>
+  </div>
+</div>
+
+<!-- ==========================================
+     NAVBAR
+     ========================================== -->
+<nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <i class="fas fa-code me-2"></i>TechMinimal
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="fas fa-bars" style="color: #fff; font-size: 1.5rem;"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto text-uppercase">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="d-flex align-items-center gap-3">
+        <button id="themeToggle" class="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="#contact-form" class="btn-nav-cta">Get Started</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ==========================================
+     CONTACT HERO
+     ========================================== -->
+<section class="contact-hero">
+  <div class="contact-hero-overlay"></div>
+  <div class="container">
+    <div class="contact-hero-content text-center">
+      <span class="hero-badge">Get In Touch</span>
+      <h1 class="contact-hero-title">
+        Let's Start Your <span class="highlight">Next Project</span>
+      </h1>
+      <p class="contact-hero-subtitle">
+        I'm here to help you build something amazing. Whether you have a specific project in mind
+        or just want to explore possibilities, I'd love to hear from you.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     CONTACT METHODS (Quick Access)
+     ========================================== -->
+<section class="contact-methods">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Email -->
+      <div class="col-lg-3 col-md-6">
+        <div class="contact-method-card">
+          <div class="contact-method-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h4>Email Us</h4>
+          <p>hello@techminimal.com</p>
+          <span class="contact-method-response">Response within 24 hours</span>
+        </div>
+      </div>
+
+      <!-- Phone -->
+      <div class="col-lg-3 col-md-6">
+        <div class="contact-method-card">
+          <div class="contact-method-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h4>Call Us</h4>
+          <p>+1 (555) 123-4567</p>
+          <span class="contact-method-response">Mon-Fri 9am-6pm EST</span>
+        </div>
+      </div>
+
+      <!-- WhatsApp -->
+      <div class="col-lg-3 col-md-6">
+        <div class="contact-method-card">
+          <div class="contact-method-icon" style="background: #25D366;">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <h4>WhatsApp</h4>
+          <p>+1 (555) 123-4567</p>
+          <span class="contact-method-response">Quick response</span>
+        </div>
+      </div>
+
+      <!-- Video Call -->
+      <div class="col-lg-3 col-md-6">
+        <div class="contact-method-card">
+          <div class="contact-method-icon" style="background: #0077b5;">
+            <i class="fas fa-video"></i>
+          </div>
+          <h4>Video Call</h4>
+          <p>Google Meet / Zoom</p>
+          <span class="contact-method-response">Schedule in advance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     CONTACT FORM + INFO (Main Section)
+     ========================================== -->
+<section id="contact-form" class="contact-main-section">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Left Column - Contact Info -->
+      <div class="col-lg-5">
+        <div class="contact-info-card">
+          <div class="contact-info-header">
+            <span class="section-badge">Let's Connect</span>
+            <h2 class="contact-info-title">Have a Project in Mind?</h2>
+            <p class="contact-info-text">
+              I'm always excited to work on new projects and help businesses grow online.
+              Let's discuss how I can help you achieve your goals.
+            </p>
+          </div>
+
+          <div class="contact-info-details">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p>San Francisco, CA</p>
+                <small>Available for remote work worldwide</small>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h4>Working Hours</h4>
+                <p>Monday - Friday</p>
+                <small>9:00 AM - 6:00 PM EST</small>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-reply-all"></i>
+              </div>
+              <div>
+                <h4>Response Time</h4>
+                <p>Within 24 hours</p>
+                <small>I aim to respond as quickly as possible</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-social">
+            <h4>Connect With Me</h4>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column - Contact Form -->
+      <div class="col-lg-7">
+        <div class="contact-form-card">
+          <div class="contact-form-header">
+            <h3>Send Me a Message</h3>
+            <p>Fill in the form below and I'll get back to you within 24 hours</p>
+          </div>
+
+          <form class="contact-form" id="contactForm" action="contact.php" method="POST">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Full Name *</label>
+                <input type="text" class="form-control" name="name" placeholder="John Doe" required>
+                <div class="form-error" data-for="name"></div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Email Address *</label>
+                <input type="email" class="form-control" name="email" placeholder="john@example.com" required>
+                <div class="form-error" data-for="email"></div>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Phone Number (Optional)</label>
+                <input type="tel" class="form-control" name="phone" placeholder="+1 (555) 123-4567">
+              </div>
+              <div class="col-12">
+                <label class="form-label">Subject</label>
+                <input type="text" class="form-control" name="subject" placeholder="Project Inquiry">
+              </div>
+              <div class="col-12">
+                <label class="form-label">Service Interested In</label>
+                <select class="form-control" name="service">
+                  <option value="">Select a service...</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="Mobile App Design">Mobile App Design</option>
+                  <option value="E-Commerce Solutions">E-Commerce Solutions</option>
+                  <option value="Digital Marketing">Digital Marketing</option>
+                  <option value="Cloud Solutions">Cloud Solutions</option>
+                  <option value="Maintenance & Support">Maintenance & Support</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Budget Range (Optional)</label>
+                <select class="form-control" name="budget">
+                  <option value="">Select budget range...</option>
+                  <option value="Under $1,000">Under $1,000</option>
+                  <option value="$1,000 - $3,000">$1,000 - $3,000</option>
+                  <option value="$3,000 - $5,000">$3,000 - $5,000</option>
+                  <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                  <option value="$10,000+">$10,000+</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Project Details *</label>
+                <textarea class="form-control" name="message" rows="6" 
+                          placeholder="Tell me about your project, goals, and any specific requirements..." required></textarea>
+                <div class="form-error" data-for="message"></div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-submit">
+                  <span class="btn-text">Send Message</span>
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+                <p class="form-note">
+                  <i class="fas fa-lock"></i> Your information is safe and will never be shared.
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     FREQUENTLY ASKED QUESTIONS (Contact Related)
+     ========================================== -->
+<section class="contact-faq">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="section-badge">FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Everything you need to know before reaching out</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fas fa-question-circle"></i>
+            <h4>What information should I include in my message?</h4>
+          </div>
+          <p class="faq-answer">
+            Include your project goals, target audience, timeline, and budget range. The more details you provide, 
+            the better I can understand your needs and respond with a tailored proposal.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fas fa-question-circle"></i>
+            <h4>How quickly will I get a response?</h4>
+          </div>
+          <p class="faq-answer">
+            I aim to respond within 24 hours during business days. For urgent inquiries, you can reach me via 
+            phone or WhatsApp for a quicker response.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fas fa-question-circle"></i>
+            <h4>Do you offer free consultations?</h4>
+          </div>
+          <p class="faq-answer">
+            Yes! I offer a free 30-minute consultation to discuss your project, explore possibilities, 
+            and see if we're a good fit to work together.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fas fa-question-circle"></i>
+            <h4>What happens after I submit the form?</h4>
+          </div>
+          <p class="faq-answer">
+            You'll receive a confirmation email, and I'll review your message. If I need more information, 
+            I'll reach out to schedule a call or send you a detailed questionnaire.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     GOOGLE MAPS / LOCATION (Optional)
+     ========================================== -->
+<section class="location-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="location-content">
+          <span class="section-badge">Location</span>
+          <h2 class="location-title">Find Me Here</h2>
+          <p class="location-text">
+            Based in San Francisco, serving clients worldwide. I'm available for both remote and 
+            on-site projects depending on your location and needs.
+          </p>
+          <div class="location-details">
+            <div class="location-detail">
+              <i class="fas fa-map-pin"></i>
+              <div>
+                <h4>Address</h4>
+                <p>San Francisco, CA 94105</p>
+              </div>
+            </div>
+            <div class="location-detail">
+              <i class="fas fa-globe"></i>
+              <div>
+                <h4>Remote Work</h4>
+                <p>Available worldwide</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="map-container">
+          <!-- Replace with your actual Google Maps embed -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0935!2d-122.4000!3d37.7879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808cd4b47f3d%3A0x325b7b2fe1c2d8d!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+            width="100%" 
+            height="300" 
+            style="border:0; border-radius: 16px;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     CTA SECTION
+     ========================================== -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content text-center">
+      <h2 class="cta-title">Ready to Build Something Great?</h2>
+      <p class="cta-subtitle">Let's start your project today. I'm here to help you succeed.</p>
+      <a href="#contact-form" class="cta-btn-primary">
+        Start Now <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     FOOTER
+     ========================================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <h3 class="footer-brand"><i class="fas fa-code me-2"></i>TechMinimal</h3>
+        <p class="footer-description">Professional web development services that help businesses grow online.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link"><i class="fab fa-github"></i></a>
+          <a href="#" class="footer-social-link"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="footer-social-link"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Web Development</a></li>
+          <li><a href="services.html">Mobile App Design</a></li>
+          <li><a href="services.html">E-Commerce</a></li>
+          <li><a href="services.html">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h4 class="footer-title">Newsletter</h4>
+        <p class="footer-newsletter-text">Subscribe for updates and exclusive offers.</p>
+        <form class="footer-newsletter-form">
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Your Email">
+            <button class="btn-newsletter" type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechMinimal. All rights reserved.</p>
+      <div>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html" class="ms-3">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ==========================================
+     FLOATING CTA & BACK TO TOP
+     ========================================== -->
+<a href="https://wa.me/your-number" class="floating-cta" aria-label="Contact us">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- ==========================================
+     SCRIPTS
+     ========================================== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
